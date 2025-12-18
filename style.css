@@ -2,19 +2,55 @@ body {
   margin: 0;
   font-family: sans-serif;
   background: #111;
-  color: #fff;
-  text-align: center;
+  color: #000;
 }
 
-header {
-  padding: 40px 20px;
+/* هدر بالا */
+.top-header {
+  background: #e0b2b4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
 }
 
-button {
-  padding: 15px 25px;
-  font-size: 16px;
+.top-header button {
+  background: transparent;
   border: none;
-  border-radius: 12px;
-  background: #e63946;
-  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.left button {
+  margin-right: 10px;
+}
+
+/* بنر */
+.hero {
+  position: relative;
+  height: 300px;
+  background-image: url("https://pin.it/7zv6ozMCi");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* شفافیت ۵۰٪ */
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* متن روی تصویر */
+.hero h1 {
+  position: relative;
+  font-family: 'Lalezar', cursive;
+  font-size: 36px;
+  color: #fff;
+  z-index: 1;
+  text-align: center;
+  padding: 0 10px;
 }
