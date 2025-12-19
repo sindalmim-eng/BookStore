@@ -1,20 +1,8 @@
 {
   "name": "فروشگاه کتاب لیدی مورفئوس",
   "short_name": "لیدی مورفئوس",
-  "start_url": "index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#fffaf0",
-  "theme_color": "#622347",
-  "icons": [
-    {
-      "src": "https://via.placeholder.com/192",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "https://via.placeholder.com/512",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+  "theme_color": "#622347"
 }
