@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <link rel="manifest" href="manifest.json">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کتاب‌فروشی آنلاین</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+    <link href="https://v1.fontapi.ir/css/Lalezar" rel="stylesheet">
+<link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
+
+
+    <style>
+        body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #fffaf0; /* رنگ نباتی */
+    margin: 0; /* حذف فاصله کل صفحه از لبه‌ها */
+    padding: 0; /* حذف پدینگ بدنه */
+    direction: rtl;
+}
+
+        header {
+    background-color: #e0b4b2;
+    width: 90%; /* همون عرضی که خواستی */
+    margin: 0 auto 10px auto; /* عدد اول صفر شد تا به سقف بچسبه */
+    padding: 5px 15px; /* باریک و ظریف */
+    border-radius: 0 0 15px 15px; /* لبه‌های بالا صاف، پایین گرد */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header button {
+    font-family: 'Vazir', sans-serif;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #555;
+    border: none;
+    /* پدینگ دکمه‌ها رو هم کم کردیم که داخل هدرِ باریک جا بشن */
+    padding: 6px 12px; 
+    border-radius: 8px;
+    font-size: 11px; /* فونت دکمه رو هم یکم کوچیکتر کردیم */
+    cursor: pointer;
+}
+
+
+
+
+
+
+        .container {
+    display: grid;
+    /* این خط میگه صفحه رو به دو ستون مساوی تقسیم کن */
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px; /* فاصله بین کتاب‌ها */
+    padding: 10px;
+}
+
+.book-card {
+    background: #ffffff; /* سفید خالص که روی نباتی عالی میشه */
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* سایه خیلی ملایم */
+    text-align: center;
+    border: 1px solid #f0eada; /* یه خط خیلی نازک دور کارت برای تمیزی بیشتر */
+}
+
+/* رنگ دکمه خرید رو هم با بنر ست کنیم؟ */
+.book-card button {
+    background-color: #622347; /* رنگ بنر لیدی مورفئوس */
+    color: white;
+    font-family: 'Vazir', sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+        .main-banner {
+    /* یک گرادینت شیک که از تیره به روشن میره */
+    background: linear-gradient(135deg, #622347 0%, #3a152a 100%);
+    
+    /* اضافه کردن یه بافت ملایم با کد (شبیه خط‌های مورب شیک) */
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 4px), 
+                      linear-gradient(135deg, #622347 0%, #3a152a 100%);
+
+    padding: 50px 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.1); /* یه خط خیلی نازک دور بنر */
+}
+
+.main-banner h1 {
+    color: white;
+    font-family: 'Lalezar', cursive;
+    font-size: 28px;
+    margin: 0;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.3); /* سایه متن برای عمق دادن */
+}
+
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.cat-btn {
+    font-family: 'Vazir', sans-serif;
+    background-color: white;
+    color: #622347; /* هم‌رنگ بنر */
+    border: 2px solid #622347;
+    padding: 8px 20px;
+    border-radius: 50px; /* کپسولی */
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cat-btn.active {
+    background-color: #622347;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+    <button onclick="alert('راهنما: برای خرید هر کتاب روی دکمه خرید کلیک کنید.')">راهنمای سایت</button>
+    
+    <button onclick="alert('ایمیل: support@site.com \nتلفن: ۰۹۱۲۰۰۰۰۰۰۰')">ارتباط با ما</button>
+</header>
+<div class="main-banner">
+    <h1>فروشگاه کتاب لیدی مورفئوس</h1>
+</div>
+
+<div class="categories">
+    <button class="cat-btn active">کتاب زبان اصلی</button>
+    <button class="cat-btn">کتاب ترجمه شده</button>
+</div>
+
+
+
+    <div class="container">
+        <div class="book-card">
+            <img src="https://via.placeholder.com/150" alt="کتاب">
+            <h3>شازده کوچولو</h3>
+            <p>۵۰,۰۰۰ تومان</p>
+            <button>خرید</button>
+        </div>
+
+        <div class="book-card">
+            <img src="https://via.placeholder.com/150" alt="کتاب">
+            <h3>بینوایان</h3>
+            <p>۱۲۰,۰۰۰ تومان</p>
+            <button>خرید</button>
+        </div>
+
+        <div class="book-card">
+            <img src="https://via.placeholder.com/150" alt="کتاب">
+            <h3>کیمیاگر</h3>
+            <p>۸۵,۰۰۰ تومان</p>
+            <button>خرید</button>
+        </div>
+    </div>
+
+</body>
+</html>
